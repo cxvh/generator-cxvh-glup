@@ -1,12 +1,18 @@
 # 使用方法
 > `git clone https://github.com/cxvh/generator-cxvh-gulp.git`
+
 > `cd generator-cxvh-gulp`
+
 > `npm i`
+
 > `npm link`
-然后新建文件夹执行 `yo cxvh-gulp`
+
+> 然后新建文件夹执行 `yo cxvh-gulp`
 
 # 报错解决方法
+
 > `npm config set registry http://registry.npm.taobao.org/`
+
 > `npm config set registry https://registry.npmjs.org/`
 
 ---
