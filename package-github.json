@@ -1,21 +1,12 @@
 {
-  "name": "generator-cxvh-gulp",
+  "name": "@cxvh/generator-cxvh-gulp",
   "version": "0.0.3",
   "description": "打包js,css,热更新html",
   "homepage": "https://github.com/cxvh/generator-cxvh-gulp.git",
-  "author": {
-    "name": "cxvhweb",
-    "email": "lvcaodi@outlook.com",
-    "url": "https://github.com/cxvh"
-  },
-  "files": [
-    "generators"
-  ],
+  "author": "cxvh <lvcaodi@outlook.com> (https://github.com/cxvh)",
+  "files": ["generators"],
   "main": "generators/index.js",
-  "keywords": [
-    "cxvh generator gulp",
-    "yeoman-generator"
-  ],
+  "keywords": ["cxvh generator gulp", "yeoman-generator"],
   "devDependencies": {
     "yeoman-test": "^1.7.0",
     "yeoman-assert": "^3.1.0",
@@ -41,14 +32,8 @@
     "testEnvironment": "node"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
   },
   "husky": {
     "hooks": {
@@ -56,10 +41,7 @@
     }
   },
   "eslintConfig": {
-    "extends": [
-      "xo",
-      "prettier"
-    ],
+    "extends": ["xo", "prettier"],
     "env": {
       "jest": true,
       "node": true
@@ -67,14 +49,21 @@
     "rules": {
       "prettier/prettier": "error"
     },
-    "plugins": [
-      "prettier"
-    ]
+    "plugins": ["prettier"]
   },
   "scripts": {
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "cxvh/generator-cxvh-gulp",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cxvh/generator-cxvh-gulp.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/cxvh/generator-cxvh-gulp/issues"
+  }
 }
